@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    // height: 100%;
+}
+
+canvas {
+    // position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#canvas-overlay {
+    // background-color: transparent;
+}
+
+#xandy {
+    position: fixed;
+    top: 0;
+    right: 0;
+    // float: right;
+    pointer-events: none;
+    margin: 0;
+    background-color: #fff;
+}
+
+// canvas {
+//     width: 100vw;
+//     height: 100vh;
+// }
+.tools {
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    display: flex;
+    background-color: #fff;
+    #colorPiker {
+        display: flex;
+    }
+    .colors {
+        display: flex;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 8px;
+        box-sizing: border-box;
+        filter: brightness(0.95);
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:hover {
+            filter: brightness(1);
+            box-shadow: 0px 2px 6px;
+        }
+    }
+    .color-select {
+        border: 7px solid rgba(0, 0, 0, 0.153);
+    }
+    #tool-draw,
+    #tool-special {
+        display: flex;
+        // margin: 8px;
+        align-items: center;
+        div {
+            border: 1px solid rgba(60, 59, 59, 0.23);
+            border-radius: 50%;
+            font-size: 16px;
+            // line-height: 25px;
+            margin-left: 4px;
+            padding: 7px;
+            i {
+                pointer-events: none;
+            }
+        }
+        .active {
+            background-color: #bdbaba;
+        }
+    }
+}
+
+// .drawMod {
+//     background-color: rgb(211, 162, 162);
+// }

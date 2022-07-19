@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" href="style.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvas-overlay"></canvas>
+
+    <div id="xandy">
+        <p id="mousePosition"></p>
+    </div>
+    <div class="tools">
+        <div id="tool-draw">
+            <div id="pencil" class="pen-1 tool active">
+                <i class="fas fa-solid fa-pen"></i>
+            </div>
+            <div id="circle" class="draw-circle tool">
+                <i class="fas fa-solid fa-vector-square"></i>
+            </div>
+        </div>
+
+        <div id="colorPiker">
+            <div style="background-color: red" id="red" class="colors"></div>
+            <div style="background-color: pink" id="pink" class="colors"></div>
+            <div style="background-color: yellow" id="yellow" class="colors"></div>
+            <div style="background-color: blue" id="blue" class="colors"></div>
+            <div style="background-color: green" id="green" class="colors"></div>
+            <div style="background-color: rgb(11, 11, 11)" id="black" class="colors color-select"></div>
+        </div>
+        <div id="tool-special">
+            <div class="trash tool"><i class="fas fa-thin fa-trash"></i></div>
+            <div class="eraser tool"><i class="fas fa-solid fa-eraser"></i></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
